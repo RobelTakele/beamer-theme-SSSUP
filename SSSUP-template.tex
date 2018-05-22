@@ -1,0 +1,107 @@
+\documentclass{beamer}
+\usepackage{ae}
+
+\usepackage[utf8]{inputenc} 
+\usepackage[english]{babel} 
+\usepackage[T1]{fontenc}
+
+\usepackage{lipsum}
+
+\usetheme{SSSUP}
+
+\usepackage{hyperref}
+
+\title[The SSSUP \texttt{beamer} theme]{The SSSUP \texttt{beamer} theme}
+
+\author[Jacopo Staccioli]{Jacopo Staccioli}
+
+\institute{\href{mailto:j.staccioli@santannapisa.it}{\texttt{j.staccioli<at>santannapisa.it}}}
+
+\date[\today]{Pisa, \today}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\section{\bfseries Plain text}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Plain text}
+\lipsum[1]
+\end{frame}
+
+\section{\bfseries Blocks}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Blocks}
+\begin{block}{Default block}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+\end{block}
+\begin{alertblock}{Alert block}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+\end{alertblock}
+\begin{exampleblock}{Example block}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+\end{exampleblock}
+\end{frame}
+
+\section{\bfseries Lists}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Lists}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+An enumerated list:
+\begin{enumerate}
+\item item 1
+\item item 2
+\begin{enumerate}
+\item item 2.1
+\begin{enumerate}
+\item item 2.1.1
+\item item 2.1.2
+\end{enumerate}
+\item item 2.2
+\end{enumerate}
+\item item 3
+\item \dots
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+A non-enumerated list:
+\begin{itemize}
+\item an item
+\item another item
+\begin{itemize}
+\item a sub-item
+\begin{itemize}
+\item a sub-sub-item
+\item another sub-sub-item
+\end{itemize}
+\item another sub-item
+\end{itemize}
+\item yet another item
+\item \dots
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
